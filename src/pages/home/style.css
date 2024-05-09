@@ -1,0 +1,289 @@
+.main-sec-cont{
+    height: 92vh;
+    background: url('../../assets/images/home-page-cover.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.company-name{
+    font-size: 6rem;
+    color: #18abb5;
+}
+
+.company-name span{
+    color: #2e3b45;
+    
+}
+
+.subtitle{
+    font-size: 4.2rem;
+    color: #2e3b45;
+}
+
+.search-box{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-self: flex-start;
+    margin-bottom: 12rem;
+    align-items: center;
+    width: 450px;
+}
+
+.search-box p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.search-input{
+    border: 0;
+    font-size: 1.5rem;
+    color: #000;
+    width: 100%;
+}
+
+.container-2{
+    height: 87vh;
+    background-color: #fff;
+    padding: 3.5rem;
+    display: flex;
+    position: relative;
+}
+
+.inner-cont-c2{
+    flex: 1;
+    display: flex;
+    background-color: #e7ede8;
+    align-items: center;
+}
+
+.image1{
+    height: 80%;
+    width: 50%;
+    background: url('../../assets/images/renting-and-choice.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: -3.5rem;
+}
+
+.inner-cont2-c2{
+    width: 50%;
+    padding: 7rem;
+    padding-right: 16rem;
+    font-size: 4.5rem;
+    color: #646868;
+}
+
+.inner-cont2-c3{
+    width: 50%;
+    padding: 7rem;
+    padding-right: 16rem;
+    font-size: 4.5rem;
+    color: #646868;
+}
+
+.inner-cont-c3{
+    flex: 1;
+    display: flex;
+    border: 2px solid #87a88e;
+    z-index: 1;
+}
+
+.inner-cont2-c3{
+    width: 55%;
+    padding: 5rem 5rem;
+}
+
+.title-1{
+    font-size: 5rem;
+    margin: 7rem 6rem;
+    color: #18abb5;
+}
+
+.title-1 span{
+    color: #2e3b45;
+}
+
+.image-landlords{
+    flex: 1;
+    background: url('../../assets/images/landlords.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0 -3.5rem -3.5rem;
+}
+
+.image-tenants{
+    flex: 1;
+    background: url('../../assets/images/tenants.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0 -3.5rem -3.5rem;
+}
+
+.image-tenants-service{
+    flex: 1;
+    background: url('../../assets/images/tenant-and-service.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0 -3.5rem -3.5rem;
+}
+
+.image-vacant-rental{
+    flex: 1;
+    background: url('../../assets/images/vacant-rental.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0 -3.5rem -3.5rem;
+}
+
+.image-pre-construction{
+    flex: 1;
+    background: url('../../assets/images/pre-construction.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0 -3.5rem -3.5rem;
+}
+
+.rect-box{
+    width: 50%;
+    height: 7rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #e7ede8;
+}
+
+.inner-cont2-c3 ul li{
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 2.3rem;
+    margin: 2rem 0 2rem 0;
+    color: #848888;
+    letter-spacing: 0.1rem
+}
+
+
+
+.inner-cont-c4{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #87a88e;
+    z-index: 1;
+}
+
+.header-c4{
+    margin: 4rem 6rem;
+}
+
+.title-1-c4{
+    font-size: 5rem;
+    color: #18abb5;
+}
+
+.title-1-c4 span{
+    font-size: 5rem;
+    color: #2e3b45;
+}
+
+.subtitle-c4{
+    font-size: 1.8rem;
+    margin-top: 1.3rem;
+    color: #848888;
+}
+
+
+.inner-cont2-c4{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.tenant-service{
+    width: 48%;
+    padding: 2rem;
+    display: flex;
+}
+
+.tenant-service p{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #18abb5;
+}
+
+.tenant-service p span{
+    font-weight: 500;
+    color: #848888;
+}
+
+.title-1-c5{
+    padding: 2rem 0;
+    font-size: 5rem;
+    color: #18abb5;
+}
+
+.title-1-c5 span{
+    color: #2e3b45;
+}
+
+.c5-cont{
+    padding: 0 7rem;
+}
+
+.header-c6{
+    margin: 4rem;
+    display: flex;
+    align-self: center;
+}
+
+.header-c7{
+    margin: 3rem 5rem;
+}
+
+.title-1-c7{
+    font-size: 5rem;
+    color: #18abb5;
+}
+
+.title-1-c7 span{
+    color: #2e3b45;
+}
+
+.inner-cont1-c7{
+    width: 60%;
+    padding: 0rem 10rem 0rem 5rem;
+}
+
+.inner-cont2-c7{
+    width: 40%;
+    margin-top: -7rem;
+    display: flex;
+    flex-direction: column;
+    padding-right: 7rem;
+    align-items: flex-end;
+}
+
+.bid-platform-image{
+    flex: 0.6;
+    background: url('../../assets/images/landlords.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 49vh;
+    overflow: hidden;
+}
