@@ -1,12 +1,14 @@
-import { AppBar, Box, Divider, Drawer, IconButton, Toolbar } from '@mui/material';
+import { AppBar, Box, Button, Divider, Drawer, IconButton, Toolbar } from '@mui/material';
 import React, { memo, useState } from 'react';
 import './style.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import Logo from '../../assets/images/logo.svg';
 import { useNavigate } from 'react-router-dom';
+import CloseIcon from '@mui/icons-material/Close';
 
-const Header = () => {
+const Header = ({ show, setSidebar, sideBar }) => {
     const [mobileOpen, setMobileOpen] = useState(false);
+
     const navigate = useNavigate();
 
     const handleDrawerToggle = () => {
@@ -14,8 +16,8 @@ const Header = () => {
     };
 
     const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Box sx={{ display: 'flex', justifyContent: 'center', padding: 3 }}>
+        <Box sx={{ textAlign: 'center', width: '100%' }}>
+            <Box sx={{ display: 'flex', justifyContent: 'space-between', padding: 3 }}>
                 <img
                     src={Logo}
                     style={{ height: 30 }}
@@ -23,6 +25,10 @@ const Header = () => {
                         window.open('http://perfectpayrentbid.com');
                     }}
                 />
+
+                <IconButton title="Print Physician List" onClick={handleDrawerToggle}>
+                    <CloseIcon />
+                </IconButton>
             </Box>
 
             <Divider />
@@ -57,7 +63,7 @@ const Header = () => {
     return (
         <>
             <Box>
-                <AppBar sx={{ backgroundColor: '#dfe4e7', px: 4, py: 2 }} position="fixed" component={'nav'}>
+                <AppBar sx={{ backgroundColor: '#dfe4e7', px: 4 }} position="fixed" component={'nav'}>
                     <Toolbar sx={{ justifyContent: 'space-between' }}>
                         <IconButton
                             onClick={handleDrawerToggle}
@@ -67,6 +73,7 @@ const Header = () => {
                         >
                             <MenuIcon />
                         </IconButton>
+                        <Button onClick={() => setSidebar(!sideBar)}>Sidebar</Button>
 
                         <Box sx={{ display: 'flex' }}>
                             <img
@@ -118,7 +125,7 @@ const Header = () => {
                             display: { xs: 'block', sm: 'none' },
                             '& .MuiDrawer-paper': {
                                 boxSizing: 'border-box',
-                                width: '240px'
+                                width: '100%'
                             }
                         }}
                     >
