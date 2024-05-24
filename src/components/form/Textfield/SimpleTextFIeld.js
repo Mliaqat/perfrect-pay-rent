@@ -6,10 +6,10 @@ const SimpleTextField = ({ name, ...otherProps }) => {
     const [field, mata] = useField(name);
 
     const configTextfield = {
-        variant: 'standard',
         ...field,
         ...otherProps,
-        fullWidth: true
+        fullWidth: true,
+        fontSize: 16
     };
 
     if (mata && mata.touched && mata.error) {
@@ -17,7 +17,7 @@ const SimpleTextField = ({ name, ...otherProps }) => {
         configTextfield.helperText = mata.error;
     }
 
-    return <TextField {...configTextfield} />;
+    return <TextField size='small' {...configTextfield} inputProps={{ style: { fontSize: '15px' } }} />;
 };
 
 export default SimpleTextField;

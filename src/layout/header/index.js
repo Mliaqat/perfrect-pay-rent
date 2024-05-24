@@ -16,7 +16,13 @@ const Header = () => {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
             <Box sx={{ display: 'flex', justifyContent: 'center', padding: 3 }}>
-                <img src={Logo} style={{ height: 30 }} />
+                <img
+                    src={Logo}
+                    style={{ height: 30 }}
+                    onClick={() => {
+                        window.open('http://perfectpayrentbid.com');
+                    }}
+                />
             </Box>
 
             <Divider />
@@ -63,7 +69,13 @@ const Header = () => {
                         </IconButton>
 
                         <Box sx={{ display: 'flex' }}>
-                            <img src={Logo} style={{ height: 30 }} />
+                            <img
+                                src={Logo}
+                                style={{ height: 30 }}
+                                onClick={() => {
+                                    window.open('http://perfectpayrentbid.com');
+                                }}
+                            />
                         </Box>
 
                         <Box sx={{ display: { xs: 'none', sm: 'block' } }}>

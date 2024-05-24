@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import { makeStyles } from '@mui/styles';
-import { Typography } from '@mui/material';
+import { CircularProgress, Typography } from '@mui/material';
 import { COLORS } from '../../../utils/constants';
 
 const useStyles = makeStyles((theme) => ({
@@ -15,14 +15,16 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const GradientButton = ({ label }) => {
+const GradientButton = ({ label, loading, ...otherProps }) => {
     const classes = useStyles();
 
     return (
-        <Button className={classes.gradientButton} sx={{ py: 1, px: 4 }}>
-            <Typography variant="h6" sx={{ color: COLORS.white, textTransform: 'capitalize' }}>
-                {label}
-            </Typography>
+        <Button className={classes.gradientButton} sx={{ py: 1, px: 4 }} {...otherProps}>
+            {loading ? (
+                <CircularProgress size={20} sx={{color: COLORS.white, m: 0.3}} />
+            ) : (
+                <Typography sx={{ color: COLORS.white, textTransform: 'capitalize' }}>{label}</Typography>
+            )}
         </Button>
     );
 };
